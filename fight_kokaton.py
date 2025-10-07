@@ -84,7 +84,7 @@ class Bird:
             self.rct.move_ip(-sum_mv[0], -sum_mv[1])
         if not (sum_mv[0] == 0 and sum_mv[1] == 0):
             self.img = __class__.imgs[tuple(sum_mv)]
-        if not sum_mv ==[0,0]:  # 演習4
+        if not sum_mv == [0,0]:  # 演習4
             self.dire = (sum_mv[0],sum_mv[1])
 
         screen.blit(self.img, self.rct)
